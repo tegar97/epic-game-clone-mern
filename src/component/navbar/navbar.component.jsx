@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 
 import {MenuItemContainer,AppBarContainer,NavbarContainer,LogoContainer,ImageLogo,MenuItem,MenuItemContainerLeft,MenuItemContainerRight,CardPrice} from './navbar.styles'
+import { Link } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -13,7 +14,10 @@ export default function Navbar() {
       <AppBarContainer position="static" >
         <Toolbar >
           <LogoContainer edge="start"  color="inherit" aria-label="menu">
-           <ImageLogo src="https://cdn2.unrealengine.com/Unreal+Engine%2Feg-logo-filled-1255x1272-0eb9d144a0f981d1cbaaa1eb957de7a3207b31bb.png" />
+          <Link to="/">
+            <ImageLogo src="https://cdn2.unrealengine.com/Unreal+Engine%2Feg-logo-filled-1255x1272-0eb9d144a0f981d1cbaaa1eb957de7a3207b31bb.png" />
+          
+          </Link>
           </LogoContainer>
           <MenuItemContainer>
             

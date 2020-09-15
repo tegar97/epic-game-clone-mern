@@ -12,14 +12,14 @@ import DetailGames from './pages/detail-game/detail-games.pages';
 function App() {
   return (
     <>
-    <Navbar/>
     <div className="App">
-      <Router>
+
+      <Navbar/>
         <Switch>
         <Route exact path="/" component={Home}/>
-        <Route  path="/games" component={DetailGames}/>
+        <Route   path="/games" component={DetailGames}/>
         </Switch>
-      </Router>
+  
     </div>
     </>
   );

@@ -48,3 +48,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+a{
+  text-decoration: none;
+}
+.slick-dots li button:before{
+  color: #fff !important;
+}

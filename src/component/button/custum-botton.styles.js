@@ -29,17 +29,32 @@ const transparentInStyles = css`
   color: white;
   border: #4285f4;
 
+
   &:hover {
     background-color: rgba(255, 255, 255,.5);
 
     border: none;
   }
 `;
+const ButtonOffer = css`
+background-color: transparent;
+color: white;
+border: 1px solid rgb(0, 254, 255);
 
+
+&:hover {
+  background-color: rgba(255, 255, 255,.2);
+
+
+}
+`
 const getButtonStyles = props => {
   if (props.transparent) {
     return transparentInStyles;
+  }else if(props.ButtonOffer) {
+    return ButtonOffer
   }
+  
 
   return props.inverted ? invertedButtonStyles : buttonStyles;
 };

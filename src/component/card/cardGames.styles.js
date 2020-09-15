@@ -11,6 +11,7 @@ export const CardContainer = styled(Card)`
     width: 100%;
     border: none;
     box-shadow: none;
+   
     
 `
 
@@ -51,4 +52,5 @@ export const CardPrice = styled.p`
     color: var(--theme-ui-primary-text);
     
     padding-left: 1rem;
+
 `
