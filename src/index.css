@@ -26,7 +26,9 @@
 
 html{
   font-size: 62.5%; 
- 
+  @media only screen and (max-width:37.5em) {
+     font-size: 26.25%;
+    };
 
 }
 @media only screen and (max-width: 500px) {

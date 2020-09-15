@@ -3,16 +3,19 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
 import {HomeContainer,CardContainer,PreviewContainer} from './home.styles'
-import CardGames from './../component/card/cardGames.component'
+import CardGames from './../../component/card/cardGames.component'
 import { Typography } from '@material-ui/core';
 import gamesData from './games.data.json'
-import CardPromotion from './../component/card-promotion/cardPromotion.component'
+import CardPromotion from './../../component/card-promotion/cardPromotion.component'
+import CarouselHomePage from '../../component/carousel/carousel-component';
+
 const Home = () =>{
    
 
     return (
 
      <HomeContainer maxWidth="lg">
+        <CarouselHomePage/>
         <Typography variant="h4"  component="h3" >News Release </Typography>
         
             <PreviewContainer  >

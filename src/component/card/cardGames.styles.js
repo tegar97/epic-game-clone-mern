@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 
 
 
+  
 export const CardContainer = styled(Card)`
     max-width: 345px;
     background-color: transparent !important;

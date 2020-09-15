@@ -6,7 +6,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Home from './pages/home.pages.js';
+import Home from './pages/home/home.pages';
+import DetailGames from './pages/detail-game/detail-games.pages';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/" component={Home}/>
+        <Route exact path="/" component={Home}/>
+        <Route  path="/games" component={DetailGames}/>
         </Switch>
       </Router>
     </div>

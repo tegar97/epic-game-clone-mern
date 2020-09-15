@@ -43,7 +43,7 @@ export const CardImage = styled.img`
 
 `
 
-export const CardPromotionTitle = styled.h4`
+export const CardPromotionTitle = styled.h3`
     font-family: 'Grandstander', cursive;
     font-size: 5.5rem;
     @media only screen and (max-width: 600px) {   font-size: 3rem;}
