@@ -1,0 +1,55 @@
+[
+    {
+        "id": "1",
+        "title": "unifinished swan",
+        "discount": "50%",
+        "price" : "$42",
+        "priceBeforeDiscount" : "$24",
+        "studio" : "Giant Sparow | Annupurna inter",
+        "slug" : "the-unfinished-swan/home",
+        "description" : "game seru",
+        "thumbnail" : "https://cdn1.epicgames.com/5c99f4b1cded415592255a53c1cad617/offer/EGS_TheUnfinishedSwan_GiantSparrow_S2-1200x1600-9950b20d20f362a591ace024949a43cc.jpg?h=854&resize=1&w=640"
+
+    },
+    {
+        "id": "2",
+        "title": "A far Ash The eve",
+        "discount": "10%",
+        "price" : "$8.2",
+        "priceBeforeDiscount" : "$12.25",
+        "studio" : "Unexpected games ",
+        "slug" : "apex-legends",
+        "description" : "game seru",
+        "thumbnail" : "https://cdn1.epicgames.com/c14dd3d3c8214149b27477dd4619f029/offer/38507319-7a4f-4c39-af64-3a9ae145b1a3-1200x1600-1fd9ae91fa3cf0dcc72c122ef8d2fdf0.jpg?h=854&resize=1&w=640"
+    },
+    {
+        "id": "3",
+        "title": "Kingdoms of Amalur Re-recko",
+        "discount": "20%",
+        "price" : "$22",
+        "priceBeforeDiscount" : "$24",
+        "studio" : "Kaiko,Big huge games | Thq",
+        "slug" : "apex-legends",
+        "description" : "game seru",
+        "thumbnail" : "https://cdn1.epicgames.com/0f86606a1622460898a7874d488f288a/offer/Portrait_Product_Image-1200x1600-9f98edc40c24f96c10fb38316ad8860d.png?h=854&resize=1&w=640"
+    },
+    {
+        "id": "4",
+        "title": "Tomhawks pro skater",
+        "price" : "$42",
+        "studio" : "Vicarious games | Activision games",
+        "slug" : "apex-legends",
+        "description" : "game seru",
+        "thumbnail" : "https://cdn1.epicgames.com/deab864e1abf4357b303bcd5ff6fe8da/offer/EGS_TonyHawksProSkater12_VicariousVisions_Editions_S2-1200x1600-727267cd47cc9f0b4122bb1d71b966db.jpg?h=854&resize=1&w=640"
+    },
+    {
+        "id": "5",
+        "title": "WRC 9 FIA World Rally Champion",
+
+        "price" : "$42",
+        "studio" : "KT RACING  | NACON",
+        "slug" : "apex-legends",
+        "description" : "game seru",
+        "thumbnail" : "https://cdn1.epicgames.com/9cf250606722448887fa1447b1d9da06/offer/EGS_WRC9FIAWorldRallyChampionship_KTRacing_S2-1200x1600-2e92991d2eb3440be53f4c41a53d1b3b.jpg?h=854&resize=1&w=640"
+    }
+]
