@@ -15,7 +15,7 @@ const Home = () =>{
     return (
 
      <HomeContainer maxWidth="lg">
-        <CarouselHomePage/>
+        <CarouselHomePage />
         <Typography variant="h4"  component="h3" >News Release </Typography>
         
             <PreviewContainer  >

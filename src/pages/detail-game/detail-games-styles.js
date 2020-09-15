@@ -14,3 +14,7 @@ export const DetaileGamesContainer = styled(Container)`
     @media only screen and (min-width: 992px) { padding: 4rem 8rem !important;}
 
 `
+
+export const SliderContainer = styled.div`
+    padding: 4rem;
+`

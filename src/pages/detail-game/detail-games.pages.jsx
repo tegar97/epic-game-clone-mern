@@ -1,11 +1,16 @@
 import React from 'react'
-import {DetaileGamesContainer} from './detail-games-styles'
-import CarouselDetailPages from './../../component/carousel/carousel-component'
+import {DetaileGamesContainer,SliderContainer} from './detail-games-styles'
+import SliderCarousel from './../../component/slider/slider.component'
 const  DetailGames = () => {
     return (
+       <React.Fragment>
+       <SliderContainer>
+          <SliderCarousel/>
+       </SliderContainer>
        <DetaileGamesContainer>
-          <CarouselDetailPages/>
+         <h1>Sketboard</h1>
        </DetaileGamesContainer>
+       </React.Fragment>
     )
 }
 

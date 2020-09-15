@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Badge from '@material-ui/core/Badge';
-
+import {Link} from 'react-router-dom'
 import {CardContainer,CardTitle,CardStudio,CardPriceContainer,CardPriceDiscount,CardPriceBeforeDiscount,CardPrice} from './cardGames.styles'
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -23,6 +23,7 @@ const CardGames = ({gamesData}) => {
     const classes = useStyles();
     return (
         <CardContainer>
+            <Link to={`/games/${gamesData.slug}`}>
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
@@ -59,6 +60,7 @@ const CardGames = ({gamesData}) => {
             
         
             </CardPriceContainer>
+            </Link>
     </CardContainer>
     )
 }
