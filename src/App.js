@@ -1,28 +1,49 @@
 import React from 'react';
-import Navbar from './component/navbar/navbar.component';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Redirect
 } from "react-router-dom";
 import Home from './pages/home/home.pages';
 import DetailGames from './pages/detail-game/detail-games.pages';
+import Login from './pages/login/login.component'
 
-
+import Navbar from './component/navbar/navbar.component';
 function App() {
-  return (
-    <>
-    <div className="App">
-
+  const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
+    <Route {...rest} render={props => (
+      <Layout>
+        <Component {...props} />
+      </Layout>
+    )} />
+  )
+  
+  const WithNavbar = props => (
+    <div>
       <Navbar/>
-        <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route   path="/games" component={DetailGames}/>
-        </Switch>
+      {props.children}
+    </div>
+  )
+  const NoNavbar = props => (
+    <div>
+      {props.children}
+    </div>
+  )
+
+  
+  return (
+  
+    <div className="App">
+    <Switch>
+      <AppRoute exact path="/" layout={WithNavbar} component={Home} />
+      <AppRoute exact path="/login" layout={NoNavbar} component={Login} />
+    </Switch>
+
   
     </div>
-    </>
+  
   );
 }
 

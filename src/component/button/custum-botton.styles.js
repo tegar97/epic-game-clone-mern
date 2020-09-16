@@ -71,6 +71,23 @@ border: #4285f4;
   border: none;
 }
 `
+const loginButton = css`
+  background-color: #4285f4;
+  color: white;
+  border: #4285f4;
+
+  &:hover {
+    background-color: rgba(255, 255, 255,.5);
+
+    border: none;
+  }
+`
+export const disabled = css`
+  color: rgba(255, 255, 255,.5);
+  background-color: black;
+  
+
+`
 
 const getButtonStyles = props => {
   if (props.transparent) {
@@ -83,6 +100,12 @@ const getButtonStyles = props => {
   }
   else if (props.chartButton) {
     return chartButton
+  }
+  else if(props.loginButton) {
+    return loginButton
+  }
+  else if(props.disabled) {
+    return disabled 
   }
   
 
