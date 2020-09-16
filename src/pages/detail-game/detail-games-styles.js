@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Container from '@material-ui/core/Container';
 import { Typography } from '@material-ui/core'
 import CustomButton from '../../component/button/custom-button.component'
+import {ReactComponent as Windows} from './svg/windows.svg'
 
 export const DetaileGamesContainer = styled(Container)`
     padding: 2rem 11rem !important;
@@ -64,7 +65,95 @@ export const DetailGameLogo = styled.img`
 
 export const OfferButton = styled(CustomButton)`
     margin-left: 2rem;
-    @media only screen and (max-width: 600px) {  margin-right: 1rem;margin-top: 2rem;}
+    @media only screen and (max-width: 600px) {  margin-right: 1rem;margin-top: 2rem;};
 
 `
 
+export const AboutGame = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    @media only screen and (max-width: 600px) {     
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+
+`
+export const AboutGameWrap = styled.div`
+    display: flex;
+    flex-basis: 28%;
+`
+
+export const AboutGameTextWrap = styled.div`
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+   
+        
+
+    
+`
+export const AboutGameDetail = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem 23.5rem;
+    @media only screen and (max-width: 600px) {     
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    }
+
+    
+    
+
+`
+
+export const AboutGameTitle = styled(Typography)`
+    font-size: 1.7rem !important;
+    font-weight: 400 !important;
+    color: #f5f5f5;
+    opacity: 70%;
+    margin-bottom: .8rem !important;
+
+    
+`
+
+export const AboutGameText = styled(Typography)`
+    font-size: 1.25rem !important;
+    font-weight: medium !important;
+    font-family: sans-serif; 
+`
+
+export const SvgWrapper = styled(Windows)`
+    width: 2rem;
+    fill: #fff;
+    &:not(:first-child):not(:last-child) {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+  
+`
+export const AboutDescription = styled.div`
+  
+    width: 100%;
+    padding-left: 28%;
+    margin-top: 5rem;
+    @media only screen and (max-width: 600px) {padding-left: 0;};
+
+`
+export const AboutGameDescription = styled.span`
+    font-size: 1.3rem;
+    color: #f5f5f5;
+    opacity: 60%;
+   
+    margin-bottom: 1rem !important;
+   
+`
+
+
+export const GamesBuyContainer = styled.div`
+    display: flex;
+    width: 100%;
+    margin-top: 5rem;
+`

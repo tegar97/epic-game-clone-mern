@@ -5,7 +5,7 @@ import { Typography } from '@material-ui/core'
 import Carousel from 'react-material-ui-carousel'
 const CarouselHomePage = () => {
     const [index,setIndex] = useState(0);
-    const [carouselIndex,setCarouselIIndex] = useState(0)
+    const [carouseid,setCarouselId] = useState(0)
     return (
         <React.Fragment>
         <CarouselContainer >
