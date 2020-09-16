@@ -48,11 +48,41 @@ border: 1px solid rgb(0, 254, 255);
 
 }
 `
+const BuyBotton = css`
+  background-color: rgb(0, 254, 255);;
+  color: black;
+  border: 1px solid rgb(0, 254, 255);
+
+
+&:hover {
+  opacity: 90%;
+
+
+}
+`
+const chartButton = css`
+background-color: rgba(255, 255, 255,.4);
+color: white;
+border: #4285f4;
+
+&:hover {
+  background-color: rgba(255, 255, 255,.5);
+
+  border: none;
+}
+`
+
 const getButtonStyles = props => {
   if (props.transparent) {
     return transparentInStyles;
   }else if(props.ButtonOffer) {
     return ButtonOffer
+  }
+  else if(props.BuyBotton) {
+    return BuyBotton
+  }
+  else if (props.chartButton) {
+    return chartButton
   }
   
 
@@ -73,5 +103,7 @@ export const CustomButtonContainer = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
+
   ${getButtonStyles}
 `;

@@ -2,7 +2,7 @@ import React from 'react'
 import {DetaileGamesContainer,SliderContainer,DetailGameLogo,SummaryGameInfo,DetailLogoContainer,DetailTextContainer,DetailTextDescription,OfferButton,AboutGameDetail,AboutGame,AboutGameWrap,AboutGameTextWrap,AboutGameTitle,AboutGameText,SvgWrapper,AboutDescription,AboutGameDescription,GamesBuyContainer} from './detail-games-styles'
 import SliderCarousel from './../../component/slider/slider.component'
 import { Divider, Typography } from '@material-ui/core';
-
+import CardBuy from './../../component/card-buy/card-buy.component'
 const  DetailGames = () => {
     return (
        <React.Fragment>
@@ -71,10 +71,11 @@ const  DetailGames = () => {
                <AboutGameDescription> Play all the original modes and go head-to-head with local 2-Player modes. Show off your style and creativity with upgraded Create-A-Park and Create-A-Skater features. Compete against players from around the world in Multiplayer modes and leaderboards.</AboutGameDescription>
                </AboutDescription>
                <GamesBuyContainer>
-               <AboutGameWrap>
-               <Typography variant="h4" component="span">About Game</Typography>
-            
-            </AboutGameWrap>
+                  <AboutGameWrap>
+                     <Typography variant="h4" component="span">About Game</Typography>
+                   </AboutGameWrap>
+                     
+                  <CardBuy/>
                </GamesBuyContainer>
                <br/>
          </AboutGame>

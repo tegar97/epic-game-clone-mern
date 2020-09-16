@@ -9,6 +9,7 @@ import {
 import Home from './pages/home/home.pages';
 import DetailGames from './pages/detail-game/detail-games.pages';
 
+
 function App() {
   return (
     <>

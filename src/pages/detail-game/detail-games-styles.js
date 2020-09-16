@@ -154,6 +154,9 @@ export const AboutGameDescription = styled.span`
 
 export const GamesBuyContainer = styled.div`
     display: flex;
+    @media only screen and (max-width: 600px) {    flex-direction: column;};
+
     width: 100%;
     margin-top: 5rem;
 `
+
