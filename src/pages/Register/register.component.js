@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
@@ -6,17 +6,34 @@ import TextField from '@material-ui/core/TextField'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import Button  from '@material-ui/core/Button'
+import MenuItem from '@material-ui/core/MenuItem';
 
-import useStyle from './login.styles'
+import useStyle from './register.styles'
 import CustomButton from '../../component/button/custom-button.component'
-
-const Login = () => {
-    const [userData,setUserData] = useState({email: '',password: ''})
+import axios from 'axios'
+const Register = () => {
+    const [userData,setUserData] = useState({email: '',password: '',country: ''})
+    const [country,setCountry] = useState([])
     const classes = useStyle()
+    const divRef = React.useRef()
+
+    useEffect(() => {
+        async function fetchDatCountry() {
+            await axios.get('https://restcountries.eu/rest/v2/all').then(res =>   (
+                setCountry(res.data)
+            )  )
+        }
+        divRef.current.focus();
+        fetchDatCountry();
+      }, []);
+    
+    
 
     const handleChange = event => {
+        console.log(userData.country)
         const {value ,name} = event.target;
         setUserData({ ...userData,[name]: value })
+
     }
     return (
         <>
@@ -28,6 +45,28 @@ const Login = () => {
                 <Typography variant="h5" component="h1" className={classes.title}>Signin With Epic Games Account</Typography>
 
                 <form  noValidate>
+                <TextField  variant="outlined" select label="Country"  helperText="Please select your currency" name="country" value={userData.country}  onChange={handleChange} ref={divRef}  fullWidth InputLabelProps={{
+                    style: {
+                      textOverflow: 'ellipsis',
+                      whiteSpace: 'nowrap',
+                      overflow: 'hidden',
+                      width: '100%',
+                      color: '#fff',
+                      opacity: '70%',
+                      fontSize: '1.5rem'
+                    } }} style={{color: '#fff'}} 
+                    >
+                    
+                    {
+                        country.map(country => (
+                            <MenuItem  key={country.name}  value={country.name}>
+                                {country.name}
+                            </MenuItem>
+
+                        ))
+                    }
+        
+        </TextField>
                 
                     <TextField    variant="outlined" color="primary" InputLabelProps={{
                         style: {
@@ -81,4 +120,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Register
