@@ -9,6 +9,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 export const NavbarContainer = styled.div`
     flex-grow: 1;
+    z-index: 1244;
+
     
 `
 export const ToolbarContainer = styled(Toolbar)`
